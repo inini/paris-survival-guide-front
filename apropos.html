@@ -1,36 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Paris Guide de survie</title>    
-    <script src="https://maps.googleapis.com/maps/api/js"></script>
-	
-    <style>
-      #map-canvas {
-        width: 100%;
-        min-height: 600px;
-		height: 100%;
-      }
-    </style>
-
-    <!-- Bootstrap -->
-	
-	<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'> 
-    <link href="css/bootstrap.css" rel="stylesheet">
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <script src="https://maps.googleapis.com/maps/api/js"></script>  
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-
-	<link href='css/psg.css' rel='stylesheet' type='text/css'> 
-	
-	
-	    <script>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'> 
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href='css/psg.css' rel='stylesheet' type='text/css'> 
+   <script>
       function initialize() {
         var mapCanvas = document.getElementById('map-canvas');
         var mapOptions = {
@@ -44,149 +27,143 @@
     </script>
   </head>
   <body>
-<div class="row">
-		<div class="col-xs-6 col-lg-4 menu_psg">
-	<h1 class="titre">Paris<br>Guide de<br>survie</h1> 
-		<p class="txt1">Paris Guide de survie est une carte interactive qui répertorie tous les accidents de circulation qui se sont produits en 2012 et en 2013 à Paris intra-muros.</p>
-		<ul class="contact">
-			<li><a href="index.html">Retour</a></li>
-		</ul>
-		
-		</div>
-
-        <div class="col-xs-12 col-sm-6 col-lg-8" id="carte_psg">
-     
-        
-         <article class="article" id="item_article" itemscope="">
-
-<header class="article_header">
-  <h1 itemprop="Headline">Paris: quelles sont les rues les plus dangereuses près de chez vous?</h1><h2 class="chapo">Grâce aux données publiques de la ville de Paris, nous avons cartographié les accidents de la circulation dans la capitale depuis 2012. Que vous soyez piéton ou automobiliste, découvrez les jours, les zones et les conditions météo dans lesquelles vous avez le plus de risque d'avoir un accident.&nbsp;
-  </h2>
-<figure class="ouverture">
-  <figcaption>
-    <p class="legende">
-      </p><p class="legende">Tous les accidents en 2012 et 2013, rue par rue, à Paris.</p>
-    <p></p>
-    <p class="credits">
-      </p><p class="credits">Team Roquette</p>
-    <p></p>
-  </figcaption>
-</figure>
-
-</header>
-
-<div class="article_content">
-  
-  <div class="article_container" itemprop="articleBody">
-          <p>A Paris, plus de cinq piétons sont blessés chaque jour en moyenne. Dans la capitale, où près de 60% des déplacements se font à pied, les piétons sont la catégorie d'usagers la plus fragile et la plus touchée par les accidents mortels. En 2012, 18 piétons qui ont perdu la vie à Paris et 1893 ont été blessés. Ils représentent 46% des tués et près de 24% des victimes. &nbsp;</p><p>Au total en 2012, il y a eu 7004 accidents à Paris, entraînant la mort de 39 personnes et des blessures pour 7993 individus, d'après l'Observatoire régional et interdépartemental de sécurité routière d'Île-de-France.&nbsp;</p><aside class="encadre encadre_text">
-  <p>&nbsp;</p>
-  <figure>
-    <img src="images/hackday_5164697.png" alt="Tous les accidents en 2012 et 2013, rue par rue, à Paris." width="400">
-    <figcaption>
-      <p class="legende">Tous les accidents en 2012 et 2013, rue par rue, à Paris.</p>
-      <p class="credits">Team Roquette</p>
-    </figcaption>
-  </figure>
-</aside><p>Grâce aux données publiques mises à disposition sur le site Data.gouv.fr, Lexpress.fr a réalisé une cartographie des accidents qui se sont produits à Paris durant les années 2012<sup> </sup>et 2013. Ces données permettent de localiser les zones les plus dangereuses de la capitale.&nbsp;</p><p>Les trois arrondissements qui ont concentré le plus d'accidents impliquant des piétons sont le XVIIIe , le XVIe et le XVIIe, qui représentent à eux seuls 22% des accidents de ce type.&nbsp;</p><aside class="encadre encadre_table">
-  <table class="blanc border">
-    <tbody>
-      <tr>
-        <td class="highlight">Arrondissement</td>
-        <td class="highlight">Nombre d'accidents impliquant des piétons</td>
-      </tr>
-      <tr>
-        <td>1</td>
-        <td>81</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>47</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>51</td>
-      </tr>
-      <tr>
-        <td>4</td>
-        <td>68</td>
-      </tr>
-      <tr>
-        <td>5</td>
-        <td>64</td>
-      </tr>
-      <tr>
-        <td>6</td>
-        <td>83</td>
-      </tr>
-      <tr>
-        <td>7</td>
-        <td>93</td>
-      </tr>
-      <tr>
-        <td>8</td>
-        <td>140</td>
-      </tr>
-      <tr>
-        <td>9</td>
-        <td>113</td>
-      </tr>
-      <tr>
-        <td>10</td>
-        <td>95</td>
-      </tr>
-      <tr>
-        <td>11</td>
-        <td>132</td>
-      </tr>
-      <tr>
-        <td>12</td>
-        <td>128</td>
-      </tr>
-      <tr>
-        <td>13</td>
-        <td>138</td>
-      </tr>
-      <tr>
-        <td>14</td>
-        <td>118</td>
-      </tr>
-      <tr>
-        <td>15</td>
-        <td>144</td>
-      </tr>
-      <tr>
-        <td>16</td>
-        <td>163</td>
-      </tr>
-      <tr>
-        <td>17</td>
-        <td>153</td>
-      </tr>
-      <tr>
-        <td>18</td>
-        <td>169</td>
-      </tr>
-      <tr>
-        <td>19</td>
-        <td>128</td>
-      </tr>
-      <tr>
-        <td>20</td>
-        <td>146</td>
-      </tr>
-    </tbody>
-  </table>
-</aside><p>Ces données permettent aussi, par exemple, de détecter les carrefours les plus dangereux. Pour les piétons, citons notamment l'angle de la rue de Rivoli et de la rue Pavée, de l'avenue d'Italie avec la rue de Tolbiac, de la rue d'Alesia avec la rue Raymond Losserand, et les carrefours Bd St Michel - rue Francisque Gay, Bd de l'Hôpital - Gare d'Austerlitz. Sans oublier le fameux rond-point de la place de l'Etoile.&nbsp;</p><p><strong><em>Pour rechercher les données qui vous intéressent, effectuez une recherche par adresse, mode de transport, gravité de l'accident (indemne, blessé, mort), conditions météorologiques, jour ou mois.</em></strong>&nbsp;</p>
-
-  </div>
-</div>
-
-  </div>
-</div>
-  </article>
-    
-		</div>
-
+    <div class="row">
+      <div class="col-xs-6 col-lg-4 menu_psg">
+        <h1 class="titre">Paris<br>Guide de<br>survie</h1> 
+        <p class="txt1">Paris Guide de survie est une carte interactive qui répertorie tous les accidents de circulation qui se sont produits en 2012 et en 2013 à Paris intra-muros.</p>
+        <ul class="contact">
+          <li><a href="index.html">Retour</a></li>
+        </ul>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-lg-8" id="carte_psg">
+        <article class="article" id="item_article" itemscope="">
+          <header class="article_header">
+            <h1 itemprop="Headline">Paris: quelles sont les rues les plus dangereuses près de chez vous?</h1>
+            <h2 class="chapo">Grâce aux données publiques de la ville de Paris, nous avons cartographié les accidents de la circulation dans la capitale depuis 2012. Que vous soyez piéton ou automobiliste, découvrez les jours, les zones et les conditions météo dans lesquelles vous avez le plus de risque d'avoir un accident.&nbsp;
+            </h2>
+            <figure class="ouverture">
+              <figcaption>
+                <p class="legende">
+                  </p><p class="legende">Tous les accidents en 2012 et 2013, rue par rue, à Paris.</p>
+                <p></p>
+                <p class="credits">
+                  </p><p class="credits">Team Roquette</p>
+                <p></p>
+              </figcaption>
+            </figure>
+          </header>
+          <div class="article_content">
+            <div class="article_container" itemprop="articleBody">
+              <p>A Paris, plus de cinq piétons sont blessés chaque jour en moyenne. Dans la capitale, où près de 60% des déplacements se font à pied, les piétons sont la catégorie d'usagers la plus fragile et la plus touchée par les accidents mortels. En 2012, 18 piétons qui ont perdu la vie à Paris et 1893 ont été blessés. Ils représentent 46% des tués et près de 24% des victimes. &nbsp;</p>
+              <p>Au total en 2012, il y a eu 7004 accidents à Paris, entraînant la mort de 39 personnes et des blessures pour 7993 individus, d'après l'Observatoire régional et interdépartemental de sécurité routière d'Île-de-France.&nbsp;</p>
+              <aside class="encadre encadre_text">
+                <figure>
+                  <img src="images/hackday_5164697.png" alt="Tous les accidents en 2012 et 2013, rue par rue, à Paris." width="400">
+                  <figcaption>
+                    <p class="legende">Tous les accidents en 2012 et 2013, rue par rue, à Paris.</p>
+                    <p class="credits">Team Roquette</p>
+                  </figcaption>
+                </figure>
+              </aside>
+              <p>Grâce aux données publiques mises à disposition sur le site Data.gouv.fr, Lexpress.fr a réalisé une cartographie des accidents qui se sont produits à Paris durant les années 2012 et 2013. Ces données permettent de localiser les zones les plus dangereuses de la capitale.&nbsp;</p>
+              <p>Les trois arrondissements qui ont concentré le plus d'accidents impliquant des piétons sont le XVIIIe , le XVIe et le XVIIe, qui représentent à eux seuls 22% des accidents de ce type.&nbsp;</p>
+              <aside class="encadre encadre_table">
+                <table class="blanc border">
+                  <tbody>
+                    <tr>
+                      <td class="highlight">Arrondissement</td>
+                      <td class="highlight">Nombre d'accidents impliquant des piétons</td>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td>81</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>47</td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>51</td>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td>68</td>
+                    </tr>
+                    <tr>
+                      <td>5</td>
+                      <td>64</td>
+                    </tr>
+                    <tr>
+                      <td>6</td>
+                      <td>83</td>
+                    </tr>
+                    <tr>
+                      <td>7</td>
+                      <td>93</td>
+                    </tr>
+                    <tr>
+                      <td>8</td>
+                      <td>140</td>
+                    </tr>
+                    <tr>
+                      <td>9</td>
+                      <td>113</td>
+                    </tr>
+                    <tr>
+                      <td>10</td>
+                      <td>95</td>
+                    </tr>
+                    <tr>
+                      <td>11</td>
+                      <td>132</td>
+                    </tr>
+                    <tr>
+                      <td>12</td>
+                      <td>128</td>
+                    </tr>
+                    <tr>
+                      <td>13</td>
+                      <td>138</td>
+                    </tr>
+                    <tr>
+                      <td>14</td>
+                      <td>118</td>
+                    </tr>
+                    <tr>
+                      <td>15</td>
+                      <td>144</td>
+                    </tr>
+                    <tr>
+                      <td>16</td>
+                      <td>163</td>
+                    </tr>
+                    <tr>
+                      <td>17</td>
+                      <td>153</td>
+                    </tr>
+                    <tr>
+                      <td>18</td>
+                      <td>169</td>
+                    </tr>
+                    <tr>
+                      <td>19</td>
+                      <td>128</td>
+                    </tr>
+                    <tr>
+                      <td>20</td>
+                      <td>146</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </aside>
+              <p>Ces données permettent aussi, par exemple, de détecter les carrefours les plus dangereux. Pour les piétons, citons notamment l'angle de la rue de Rivoli et de la rue Pavée, de l'avenue d'Italie avec la rue de Tolbiac, de la rue d'Alesia avec la rue Raymond Losserand, et les carrefours Bd St Michel - rue Francisque Gay, Bd de l'Hôpital - Gare d'Austerlitz. Sans oublier le fameux rond-point de la place de l'Etoile.&nbsp;</p>
+              <p><strong><em>Pour rechercher les données qui vous intéressent, effectuez une recherche par adresse, mode de transport, gravité de l'accident (indemne, blessé, mort), conditions météorologiques, jour ou mois.</em></strong>&nbsp;</p>
+            </div>
+          </div>
+        </div>
+      </article>  
+    </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->

@@ -1,72 +1,80 @@
-
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td,figure,nav,main{
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+#map-canvas{
+  width: 100%;
+  min-height: 600px;
+  height: 100%;
+}
 .row{
-margin: 0;
+  margin: 0;
 }
-
-.titre {
+.titre{
   font-style: 'Montserrat', sans-serif;
-  font-size: 21px;	
-  margin-top:0px;
-  line-height:120%;
+  font-size: 21px;
+  margin-top: 0;
+  line-height: 110%;
 }
-.txt1 {
-	margin-top:20px;
-  font-style: helvetica, arial;
-  font-size:13px;
+.txt1{
+  margin-top: 20px;
+  font-style: Helvetica, Arial;
+  font-size: 14px;
 }
-.item_menu {
-  font-style: arial;
-    font-size:12px;
+.item_menu{
+  font-style: Arial;
+  font-size: 12px;
+  margin-bottom: 5px;
 }
-
-.date {
-  font-style: arial;
-    font-size:11px;
-}
-
-.menu_psg {
+.menu_psg{
  padding: 30px;
 }
-.filtres {
-	margin-top: 30px
+.filtres{
+  margin-top: 30px;
 }
-.filtre_box {
-	padding-top: 10px
+.filtre_box{
+  border-bottom: 1px solid #7D7D7D;
+  padding: 10px 0 0;
 }
-#carte_psg {
- padding: 0px;
+.filtre_box:last-of-type{
+  border: 0;
+}
+#carte_psg{
+ padding: 0;
 }
 .pictos{
-	padding: 0;
-	border-bottom: 1px solid #7D7D7D;
-	padding-bottom: 10px;
+  padding: 0;
 }
 .pictos li{
-	display:inline-block;
-	opacity: 0.4;
-    filter: alpha(opacity=40); /* For IE8 and earlier */
+  display: inline-block;
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+  padding: 0 2px;
 }
-.pictos li:hover, .pictos li.picto_on{
-	cursor:pointer;
-	opacity: 1;
-    filter: alpha(opacity=100); /* For IE8 and earlier */
+.pictos li:hover,
+.pictos li.picto_on{
+  cursor: pointer;
+  opacity: 1;
+  filter: alpha(opacity=100);
 }
 .contact{
-	margin: 10px 0;
-	padding: 0;
-		}
-.contact li {
-	display:inline-block;
-	color: #fff;
-	font-size:11px;
-	padding-right:5px;
-	
+  margin: 10px 0;
+  padding: 0;
+}
+.contact li{
+  display: inline-block;
+  color: #FFF;
+  font-size: 12px;
+  padding-right: 5px;
 }
 .contact li a{
- color: #fff;
+ color: #FFF;
  text-decoration: underline;
-} 
-
+}
+.resultats{
+  margin-top: 30px
+}
 .encadre_table table{
   border: 1px solid #E2E2E2;
   border-collapse: collapse;
@@ -83,7 +91,4 @@ margin: 0;
 }
 .encadre_table .highlight{
   font-weight: bold;
-}
-.resultats{
-	margin-top: 30px
 }
