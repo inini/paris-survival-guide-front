@@ -1,0 +1,89 @@
+
+.row{
+margin: 0;
+}
+
+.titre {
+  font-style: 'Montserrat', sans-serif;
+  font-size: 21px;	
+  margin-top:0px;
+  line-height:120%;
+}
+.txt1 {
+	margin-top:20px;
+  font-style: helvetica, arial;
+  font-size:13px;
+}
+.item_menu {
+  font-style: arial;
+    font-size:12px;
+}
+
+.date {
+  font-style: arial;
+    font-size:11px;
+}
+
+.menu_psg {
+ padding: 30px;
+}
+.filtres {
+	margin-top: 30px
+}
+.filtre_box {
+	padding-top: 10px
+}
+#carte_psg {
+ padding: 0px;
+}
+.pictos{
+	padding: 0;
+	border-bottom: 1px solid #7D7D7D;
+	padding-bottom: 10px;
+}
+.pictos li{
+	display:inline-block;
+	opacity: 0.4;
+    filter: alpha(opacity=40); /* For IE8 and earlier */
+}
+.pictos li:hover, .pictos li.picto_on{
+	cursor:pointer;
+	opacity: 1;
+    filter: alpha(opacity=100); /* For IE8 and earlier */
+}
+.contact{
+	margin: 10px 0;
+	padding: 0;
+		}
+.contact li {
+	display:inline-block;
+	color: #fff;
+	font-size:11px;
+	padding-right:5px;
+	
+}
+.contact li a{
+ color: #fff;
+ text-decoration: underline;
+} 
+
+.encadre_table table{
+  border: 1px solid #E2E2E2;
+  border-collapse: collapse;
+  margin-bottom: 5px;
+}
+.encadre_table td,
+.encadre_table th,
+.encadre_table thead th{
+  padding: 2px 10px;
+  border: 1px solid #E2E2E2;
+}
+.encadre_table thead th{
+  color: #000;
+}
+.encadre_table .highlight{
+  font-weight: bold;
+}
+.resultats{
+	margin-top: 30px
+}
